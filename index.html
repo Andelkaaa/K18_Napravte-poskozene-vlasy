@@ -28,7 +28,7 @@
                 </a></p>
             <button class="btn btn-primary" onclick="addToCartFromMagazine('K18-31007')">990 Kč</button>
     </div>
-    <div class="container-txt flex">
+    <div class="container-flex txt">
         <h2>Za vším hledej vědu</h2>
         <p>Značka K18 viděla na trhu dvě kategorie vlasových produktů. Jedna skupina působila na povrchu a dodávala vlasům lesk a hydrataci. Druhá fungovala uvnitř vlasu, kde jako lepidlo napravovala poškození. Jenže jen dočasně. Vyvstala tak logická otázka –⁠ nešlo by to udělat lépe? Do práce se proto dala skupina vědců a dlouhé roky zkoumala, analyzovala a testovala každou sekvenci aminokyselin a peptidů tvořící keratinové řetězce ve vlasech. A vyplatilo se. Objevili totiž K18Peptide™, který změnil pravidla hry. </p>
         <h2>Na cestě do hlubin vlasu</h2>
@@ -38,7 +38,7 @@
 
 <img src="Obrázky/Sustainability_cycle.jpg" alt="Obrázek řetězec">
 
-<div class="container-txt">
+<div class="container txt">
     <h2>4 minuty k záchraně vlasů</h2>
     <p>Ale dost už bylo chemie, pojďme se podívat na praktickou stránku věci, tedy produkty, které tento zázračný peptid obsahují. I v tomto ohledu jde značka K18 proti proudu. Nečekejte, že se budete muset rozhodovat mezi desítkami přípravků. Nabídka by se dala označit jako minimalistická, ale přitom osloví velkou většinu z nás. A to díky tomu, že produkty K18 jsou veganské a cruelty-free, neobsahují sulfáty, ftaláty, silikony, parabeny ani formaldehydy a chrání barvu vlasů. Sortiment zahrnuje dva typy šamponů: K18 Peptide Prep Detox Shampoo určený pro občasné použití a K18 Peptide Prep pH Maintenance pro každodenní mytí. A přidat můžete intenzivní péči v podobě masky a oleje, kterým stačí jen 4 minuty na to, aby obsažený K18Peptide™ napravil poškození vlasů.</p>
 
@@ -50,8 +50,38 @@
     <p>Co to celé znamená? Že K18 netouží po tom být trendy, ale být lepší. A už proto stojí za pozornost. </p>
 </div>
 
+<style>
+.container-title > h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+.container-title > h2 {
+    color: #aa8232;
+    text-transform: uppercase;
+    border-style: solid;
+    border-width: 1px 0;
+}
+.container-flex {
+    display: flex;
+    flex-direction: row;
+}
+.widget {
+    display: flex;
+    flex-direction: column;
+}
+.txt {
+    display: flex;
+    flex-direction: column;
+}
+.txt > h2 {
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
 
 
- 
+
+</style>
+
+<script>function addToCartFromMagazine(sku) { shoptet.cartShared.addToCart({ productCode: sku, amount: 1 }); }</script>
 </body>
 </html>
