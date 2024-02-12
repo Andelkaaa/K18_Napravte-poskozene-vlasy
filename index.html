@@ -36,20 +36,20 @@
     </div>
 </div>
 
-<img src="Obrázky/Sustainability_cycle.jpg" alt="Obrázek řetězec">
+<img class="img_cycle" src="Obrázky/Sustainability_cycle.jpg" alt="Obrázek řetězec">
 
-<div class="container-txt">
+<div class="container-text">
     <div>
-        <h3>4 minuty k záchraně vlasů</h3>
+        <h3 style="text-align: left;">4 minuty k záchraně vlasů</h3>
         <p>Ale dost už bylo chemie, pojďme se podívat na praktickou stránku věci, tedy produkty, které tento zázračný peptid obsahují. I v tomto ohledu jde značka K18 proti proudu. Nečekejte, že se budete muset rozhodovat mezi desítkami přípravků. Nabídka by se dala označit jako minimalistická, ale přitom osloví velkou většinu z nás. A to díky tomu, že produkty K18 jsou veganské a cruelty-free, neobsahují sulfáty, ftaláty, silikony, parabeny ani formaldehydy a chrání barvu vlasů. Sortiment zahrnuje dva typy šamponů: K18 Peptide Prep Detox Shampoo určený pro občasné použití a K18 Peptide Prep pH Maintenance pro každodenní mytí. A přidat můžete intenzivní péči v podobě masky a oleje, kterým stačí jen 4 minuty na to, aby obsažený K18Peptide™ napravil poškození vlasů.</p>
     </div>
 
     <div>
-        <h3>Tak trochu jiná debata o udržitelnosti</h3>
+        <h3 style="text-align: left;">Tak trochu jiná debata o udržitelnosti</h3>
         <p>Udržitelnost je pojem, který se skloňuje ve všech oblastech, vlasovou péči nevyjímaje. A mluví o ní i značka K18, jen tak trochu jinak, jak je pro ni typické. Sama totiž označuje právě kosmetický průmysl za jeden z hlavních důvodů, proč musíme o udržitelnost s takovou naléhavostí mluvit. Mnohé značky si totiž v tomto ohledu tak trochu protiřečí. Na jednu stranu mluví o zelené kosmetice, na druhé ale propagují pečující rutinu s celou řadou kroků, která podporuje nadměrnou a zbytečnou spotřebu a velké množství odpadů. K18 má v tomto ohledu jasno – méně je více. I v péči o vlasy. </p>
     </div>
     <div>
-        <h3>Biotechnologie jako cesta</h3>
+        <h3 style="text-align: left;">Biotechnologie jako cesta</h3>
         <p>A podobně nahlíží značka i na přírodní ingredience. Netvrdí, že produkty jsou čistě přírodního původu a hrdě se hlásí i k syntetickým složkám. A vysvětluje to na jednoduchém příkladu. Pokud si pořídíte vlasové sérum s obsahem esenciálního růžového oleje, proces se neobejde bez 4,5 tuny okvětních růžových lístků, z nichž ale vznikne jen 450 g oleje. Což zrovna moc udržitelně nezní. A tak je možná na čase tradiční technologie trochu přehodnotit a více se inspirovat biotechnologií, která není tak náročná na zdroje. </p>
         <p>Co to celé znamená? Že K18 netouží po tom být trendy, ale být lepší. A už proto stojí za pozornost. </p>
     </div>
@@ -112,7 +112,6 @@
     }
 h3 {
     text-transform: uppercase;
-    text-align: left;
     }
 .container-title > h3 {
     color: #aa8232;
@@ -126,7 +125,7 @@ h3 {
 .container-flex {
     display: flex;
     flex-direction: row;
-    margin: 0 6rem 0 6rem 0;
+    margin: 0 12rem 0 12rem;
     align-items: flex-start;
     }
 .container-flex__widget {
@@ -136,6 +135,7 @@ h3 {
     padding-bottom: 2rem;
     width: 150%;
     }
+
 .container-flex__txt {
     display: flex;
     flex-direction: column;
@@ -146,7 +146,8 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0 6rem 0 6rem 0;
+    margin: 0 12rem 0 12rem;
+    text-align: left;
     }
 .slide {
     display: flex;
@@ -165,10 +166,55 @@ a {
     text-decoration: none;
     font-size: 11px;
     }
+</style>
+
+<style>
+    @media only screen and (max-width: 500px) {
+.container-title > h1 {
+    font-size: 12px;
+    }
+.container-title > h3 {
+    padding: 2rem 6rem 2rem 6rem;
+    margin-right: 10rem;
+    margin-left: 10rem;
+    font-size: 10px;
+    }
+.container-flex {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 1rem 0 1rem;
+    align-items: flex-start;
+    }
+.container-flex__txt {
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    }
+.container-flex__txt > h3 {
+    font-size: 14px;
+    padding-top: 0;
+    }
+.container-flex__widget {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    }
+.container-text {
+    margin: 0 1rem 0 1rem;
+    font-size: 12px;
+    }
+.container-text > h3 {
+    font-size: 14px;
+}
 
 
 
 
+
+
+    }
 </style>
 
 <script>function addToCartFromMagazine(sku) { shoptet.cartShared.addToCart({ productCode: sku, amount: 1 }); }</script>
