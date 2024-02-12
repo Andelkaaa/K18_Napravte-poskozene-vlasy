@@ -170,56 +170,94 @@ a {
 
 <style>
     @media only screen and (max-width: 500px) {
-.container-title > h1 {
-    font-size: 12px;
+    .container-title > h1 {
+        font-size: 24px;
+        }
+    .container-title > h3 {
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        margin: 0;
+        font-size: 14px;
+        }
+    .container-flex {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0 1rem 0 1rem;
+        align-items: flex-start;
+        }
+    .container-flex__txt {
+        font-size: 12px;
+        padding: 0;
+        margin: 0;
+        }
+    .container-flex__txt > h3 {
+        font-size: 14px;
+        padding-top: 0;
+        }
+    .container-flex__widget {
+        width: 65%;
+        margin-right: auto;
+        margin-left: auto;
+        }
+    .container-text {
+        margin: 0 1rem 0 1rem;
+        font-size: 12px;
+        }
+    .container-text > h3 {
+        font-size: 14px;
     }
-.container-title > h3 {
-    padding: 2rem 6rem 2rem 6rem;
-    margin-right: 10rem;
-    margin-left: 10rem;
-    font-size: 10px;
+    .slide-k18,
+    .slide-malibu {
+        display: none;
     }
-.container-flex {
-    display: flex;
-    flex-direction: column-reverse;
-    margin: 0 1rem 0 1rem;
-    align-items: flex-start;
+    .slider {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 1rem 0 1rem;
     }
-.container-flex__txt {
-    font-size: 12px;
-    padding: 0;
-    margin: 0;
     }
-.container-flex__txt > h3 {
-    font-size: 14px;
-    padding-top: 0;
-    }
-.container-flex__widget {
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-    width: 60%;
-    margin-right: auto;
-    margin-left: auto;
-    }
-.container-text {
-    margin: 0 1rem 0 1rem;
-    font-size: 12px;
-    }
-.container-text > h3 {
-    font-size: 14px;
-}
-.slide-k18,
-.slide-malibu {
-    display: none;
-}
-.slider {
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 1rem 0 1rem;
-}
-}
 </style>
-
-<script>function addToCartFromMagazine(sku) { shoptet.cartShared.addToCart({ productCode: sku, amount: 1 }); }</script>
+<style>
+    @media only screen and (max-width: 1050px) {
+    
+    .container-title > h3 {
+        padding: 2rem 4rem 2rem 4rem;
+        margin-right: 8rem;
+        margin-left: 8rem;
+        }
+    .container-flex {
+        margin: 0 1rem 0 1rem;
+        align-items: flex-start;
+        }
+    .container-flex__txt {
+        margin-left: 2rem;
+        font-size: 16px;
+        }
+    .container-flex__txt > h3 {
+        padding-top: 0;
+    
+        }
+    .container-flex__widget {
+        padding-top: 10rem;
+        padding-bottom: 2rem;
+        width: 60%;
+        margin-right: auto;
+        margin-left: auto;
+        }
+    .container-text {
+        margin: 0 1rem 0 1rem;
+        font-size: 16px;
+        }
+    
+    .slide-k18 {
+        display: none;
+    }
+    .slider {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 1rem 0 1rem;
+    }
+    }
+ </style>
+    <script>function addToCartFromMagazine(sku) { shoptet.cartShared.addToCart({ productCode: sku, amount: 1 }); }</script>
 </body>
 </html>
